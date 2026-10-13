@@ -1,0 +1,188 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex : 1;
+}
+
+/*navbar*/
+.navbar{
+    min-height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+/*footer*/
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a :hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+    
+}
+
+.f-info{
+    width: 100%;
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    
+}
+
+/* Cards*/
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/*card-effect*/
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    margin-bottom: 3rem;
+
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+
+}
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#map {
+    height: 400px ;
+    width: 80vh;
+    
+}
+
+.explore-section {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.explore-section h4 {
+    margin-bottom: 1.2rem;
+}
+
+#filters {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter {
+    min-width: 70px;
+    text-align: center;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter i {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.filter p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
