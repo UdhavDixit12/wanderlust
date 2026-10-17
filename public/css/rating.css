@@ -195,3 +195,11 @@
   -webkit-transition: background-position .7s;
   transition: background-position .7s;
 }
+
+/* Mobile fix for review rating stars */
+@media screen and (max-width: 576px) {
+    .starability-result {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

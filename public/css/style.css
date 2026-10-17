@@ -123,9 +123,17 @@ body{
 }
 
 #map {
-    height: 400px ;
-    width: 80vh;
-    
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    #map {
+        height: 280px;
+        width: 100%;
+    }
 }
 
 .explore-section {
@@ -185,4 +193,12 @@ body{
     align-items: center;
     white-space: nowrap;
     flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+    .btns .edit-btn {
+        width: auto !important;
+        min-width: 70px;
+        flex-shrink: 0;
+    }
 }

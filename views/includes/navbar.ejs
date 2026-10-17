@@ -1,4 +1,9 @@
 <style>
+  @media (min-width: 768px) {
+    .search-inp {
+        width: 300px;
+    }
+}
   
 .search-btn {
     background-color: #fe424d;
@@ -28,9 +33,12 @@
 
 .search-inp {
     border-radius: 25px;
-    padding: 0.5rem 3rem 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
+    min-width: 0;
+    text-align: center;
 }
+
 </style>
 
 
@@ -48,9 +56,10 @@
         
       </div>
       <div class="navbar-nav ms-auto">
-       <form class="d-flex" role="search">
+       <form class="d-flex w-100" role="search">
         <input 
          class="form-control me-2 search-inp"
+         style="min-width: 0;"
          type="search"
          placeholder="Search destinations"
     />
